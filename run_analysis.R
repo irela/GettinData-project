@@ -24,7 +24,7 @@ ordered_fullset <- group_by(selectedset, activityname, subject)
 resultset <- summarise_each(ordered_fullset, c("mean"))
 
 #6 write out to file
-write(resultset, file="resultset-project")
+write(resultset, file="resultset.txt")
 
 
 read_test <- function( ) {
